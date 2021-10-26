@@ -1,4 +1,1 @@
-uuid
-os
-datetime
-csv
+psycopg2

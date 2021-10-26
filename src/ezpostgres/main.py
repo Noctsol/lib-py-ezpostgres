@@ -16,7 +16,7 @@ import psycopg2
 
 
 ############################# CLASS #############################
-class Quickpost():
+class Ezpostgres():
     """Wrapper around psycopg2 for postgres. This was made for a lazy person to
     quickly use postgres via Python.
     """
@@ -32,15 +32,16 @@ class Quickpost():
             port (int, optional): Port used to connect to postgres. Defaults to 5432.
             auto_connect (bool, optional): Will return a connection upon initialization. Defaults to True.
         """
-        self.host =
-        self.dbname =           # DB name msut always be specified
-        self.username =
-        self.password =
-        self.port = port        # Set to 5432 for default port
+        self.host = host
+        self.dbname = dbname
+        self.username = username
+        self.password = password
+        self.port = port
         self.auto_connect = auto_connect
 
     @classmethod
     def from_connection_string(cls, connection_string):
+        pass
 
 
     ############################# PUBLIC  #############################
